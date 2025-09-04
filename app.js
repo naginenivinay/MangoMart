@@ -1,0 +1,1 @@
+console.log("MangoMart site loaded");
