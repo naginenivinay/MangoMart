@@ -1,14 +1,13 @@
-<main> ... </main>
-<!-- Registration Section -->
+<form> ... </form>
+<!-- Simple Registration Section -->
 <section>
-  <h2>Register to get offers & early delivery</h2>
+  <h2>Register for MangoMart Updates</h2>
 
-  <!-- Netlify Forms: collects submissions in Netlify dashboard -->
+  <!-- Netlify Forms: captures Name + Phone -->
   <form name="register" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
-    <!-- required for Netlify to recognize the form -->
     <input type="hidden" name="form-name" value="register" />
 
-    <!-- anti-bot hidden field (leave as-is) -->
+    <!-- anti-bot hidden field -->
     <p style="display:none;">
       <label>Don’t fill this out: <input name="bot-field" /></label>
     </p>
@@ -20,38 +19,15 @@
     </p>
 
     <p>
-      <label>Phone (WhatsApp preferred)<br/>
+      <label>Phone Number<br/>
         <input type="tel" name="phone" required />
-      </label>
-    </p>
-
-    <p>
-      <label>Email (optional)<br/>
-        <input type="email" name="email" />
-      </label>
-    </p>
-
-    <p>
-      <label>Address / Area<br/>
-        <input type="text" name="area" placeholder="House no, street, area, city" />
-      </label>
-    </p>
-
-    <p>
-      <label>Pincode<br/>
-        <input type="text" name="pincode" />
-      </label>
-    </p>
-
-    <p>
-      <label>Favorite fruits<br/>
-        <input type="text" name="favorites" placeholder="Mango, Lychee, Watermelon..." />
       </label>
     </p>
 
     <button class="btn" type="submit">Register</button>
   </form>
 </section>
+
 
 <!doctype html>
 <html lang="en">
