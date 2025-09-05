@@ -1,67 +1,40 @@
-<main>...</main>
-<main>
-  <section>
-    <h2>Register for MangoMart</h2>
-    <p>Enter your Name & Phone to unlock today’s fruit list 🍎🥭🍉</p>
-
-    <form name="register" method="POST" data-netlify="true" action="/fruits.html">
-      <input type="hidden" name="form-name" value="register" />
-
-      <p>
-        <label>Full Name<br/>
-          <input type="text" name="name" required />
-        </label>
-      </p>
-
-      <p>
-        <label>Phone Number<br/>
-          <input type="tel" name="phone" required />
-        </label>
-      </p>
-
-      <button class="btn" type="submit">Register</button>
-    </form>
-  </section>
-</main>
-
-
-
+html
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MangoMart</title>
+  <title>MangoMart - Register</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
     <h1>Welcome to MangoMart 🥭</h1>
-    <p>Buy fresh mangoes & seasonal fruits online</p>
+    <p>Register below to unlock our fresh fruit list</p>
   </header>
 
   <main>
     <section>
-      <h2>Our Fruits</h2>
-      <ul>
-        <li>Alphonso Mango - ₹99/kg</li>
-        <li>Banganapalle Mango - ₹99/kg</li>
-        <li>Watermelon - ₹19/kg</li>
-        <li>Sapota - ₹50/kg</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Order Now</h2>
-      <p>Click below to place your order on WhatsApp:</p>
-      <a href="https://wa.me/917989304148?text=I%20want%20to%20order%20fruits%20from%20MangoMart" class="btn">Order on WhatsApp</a>
+      <h2>Register</h2>
+      <form name="register" method="POST" data-netlify="true" action="/fruits.html">
+        <input type="hidden" name="form-name" value="register" />
+        <p>
+          <label>Full Name<br/>
+            <input type="text" name="name" required />
+          </label>
+        </p>
+        <p>
+          <label>Phone Number<br/>
+            <input type="tel" name="phone" required />
+          </label>
+        </p>
+        <button class="btn" type="submit">Register</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 MangoMart. Fresh fruits delivered to your door.</p>
+    <p>© 2025 MangoMart</p>
   </footer>
-
-  <script src="app.js"></script>
 </body>
 </html>
